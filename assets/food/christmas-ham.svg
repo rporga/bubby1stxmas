@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640" role="img" aria-label="Illustration of pineapple glazed Christmas ham">
+<defs>
+ <radialGradient id="bg"><stop offset="0" stop-color="#554537"/><stop offset="1" stop-color="#282c24"/></radialGradient>
+ <linearGradient id="ham" x1="0" y1="0" x2="0.85" y2="1"><stop offset="0" stop-color="#c47736"/><stop offset=".3" stop-color="#a84c2d"/><stop offset=".68" stop-color="#7d3326"/><stop offset="1" stop-color="#4b2725"/></linearGradient>
+ <linearGradient id="meat" x1="0" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f8c2ad"/><stop offset=".5" stop-color="#dc938c"/><stop offset="1" stop-color="#b86e72"/></linearGradient>
+ <radialGradient id="plate"><stop offset="0" stop-color="#e6d1ad"/><stop offset="1" stop-color="#978367"/></radialGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="11"/></filter>
+ <clipPath id="body"><path d="M153 274C173 179 263 123 395 136c111 12 195 90 185 180-12 115-122 180-263 171-105-7-176-97-164-213Z"/></clipPath>
+</defs>
+<rect width="900" height="640" fill="url(#bg)"/>
+<g opacity=".24"><circle cx="112" cy="87" r="4" fill="#d7a05e"/><circle cx="795" cy="98" r="7" fill="#dfad66"/><circle cx="745" cy="479" r="5" fill="#dfa65a"/><circle cx="90" cy="408" r="6" fill="#d5b379"/></g>
+<ellipse cx="454" cy="478" rx="326" ry="78" fill="#120e0b" opacity=".48" filter="url(#shadow)"/>
+<ellipse cx="445" cy="454" rx="329" ry="100" fill="url(#plate)"/><ellipse cx="445" cy="456" rx="289" ry="76" fill="#e9dcc5"/>
+<path d="M153 274C173 179 263 123 395 136c111 12 195 90 185 180-12 115-122 180-263 171-105-7-176-97-164-213Z" fill="url(#ham)" stroke="#733a29" stroke-width="8"/>
+<g clip-path="url(#body)" fill="none" stroke="#e29a5b" stroke-opacity=".43" stroke-width="9">
+ <path d="M145 193L482 505M202 143L536 462M288 105L605 405M389 105L641 339"/>
+ <path d="M150 432L496 130M216 506L566 188M311 529L618 252"/>
+</g>
+<g opacity=".65" fill="none" stroke="#ffdba4" stroke-linecap="round"><path d="M188 265c21-58 88-93 143-98" stroke-width="12"/><path d="M350 167c47 7 94 26 125 60" stroke-width="9"/></g>
+<g transform="translate(0 2)"><ellipse cx="572" cy="369" rx="76" ry="119" fill="#824035" transform="rotate(-19 572 369)"/><ellipse cx="584" cy="367" rx="60" ry="102" fill="url(#meat)" transform="rotate(-19 584 367)"/><ellipse cx="591" cy="363" rx="13" ry="27" fill="#e3b09f" transform="rotate(-19 591 363)"/><path d="M531 277c21-31 50-37 75-27" fill="none" stroke="#f1c4ac" stroke-width="6"/></g>
+<g transform="translate(55 22)"><ellipse cx="606" cy="381" rx="72" ry="111" fill="#884437" transform="rotate(-17 606 381)"/><ellipse cx="616" cy="381" rx="56" ry="94" fill="url(#meat)" transform="rotate(-17 616 381)"/><ellipse cx="621" cy="386" rx="12" ry="23" fill="#e7b09d"/></g>
+<g fill="none" stroke="#f9cc72" stroke-width="13" opacity=".88"><circle cx="257" cy="244" r="33"/><circle cx="363" cy="212" r="34"/><circle cx="440" cy="282" r="31"/></g>
+<g fill="#b92b2b"><circle cx="257" cy="244" r="7"/><circle cx="363" cy="212" r="8"/><circle cx="440" cy="282" r="7"/></g>
+<g stroke="#577554" stroke-width="8" fill="none" stroke-linecap="round"><path d="M130 452c90-38 136-29 209 12"/><path d="M670 493c67-38 112-59 158-49"/><path d="M145 448l21-27m7 36l3-38m17 40l20-37m20 44l16-28m-65 5l-33-7m43 25l-29 12"/><path d="M695 484l-4-40m25 24l24-44m-9 40l43-24m-60 41l27 18"/></g>
+<g fill="#b73e34"><circle cx="762" cy="450" r="12"/><circle cx="785" cy="460" r="10"/><circle cx="749" cy="471" r="9"/></g>
+</svg>
