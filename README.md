@@ -13,3 +13,7 @@ Minimal three-chapter Christmas microsite for Rusty & Ica.
 Built with plain HTML/CSS/JS, no build step. Open `index.html` locally or host the folder on any static web server. Honours `prefers-reduced-motion`. Inspired by minimal editorial hospitality design; no third-party restaurant design assets or code copied.
 
 **Privacy:** This repository contains personal couple photographs. A public GitHub repository exposes these images publicly.
+
+## Text-only Christmas menu (November 2026)
+
+The menu chapter uses no food photographs: a centred five-course menu, all three sides, four drinks, and individual recipe links on a seamless dark background with animated warm-gold sparkles. Food photographs are intentionally reserved for the recipe chapter. Supports reduced-motion preferences and mobile-sized screens.

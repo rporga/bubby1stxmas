@@ -25,3 +25,47 @@ body{animation:pageAppear .85s var(--ease) both}body.leaving{animation:none;opac
 .photo-gallery figure img{transform:translate3d(0,var(--image-shift,0px),0) scale(1.045)}
 .photo-gallery figure:hover img{transform:translate3d(0,var(--image-shift,0px),0) scale(1.09)}
 @media(max-width:800px){.photo-gallery figure img,.photo-gallery figure:hover img{transform:none}}
+
+
+/* Chapter II: a black-and-gold printed menu, without photography. */
+.page-menu{background:radial-gradient(ellipse 67% 26% at 50% -10%,rgba(126,91,48,.16),transparent 78%),radial-gradient(ellipse 62% 52% at 50% 48%,#11120e 0%,#090a09 70%,#070807 100%);min-height:100svh}
+.page-menu .stardust{opacity:.94;z-index:2;mix-blend-mode:screen}
+.page-menu .fine-noise{opacity:.035;z-index:1}
+.page-menu .site-nav,.page-menu .menu-main,.page-menu .chapter-footer{position:relative;z-index:3}
+.page-menu .site-nav{background:transparent}
+.page-menu .menu-main{max-width:1040px;padding:14px clamp(22px,5vw,65px) 70px}
+.page-menu .menu-topline{border-bottom:1px solid rgba(215,182,120,.14);padding:20px 0 28px}
+.page-menu .menu-layout{display:block;max-width:850px;margin:0 auto}
+.page-menu .menu-editorial{width:100%;max-width:none}
+.page-menu .menu-heading{text-align:center;padding:76px 0 65px}
+.page-menu .menu-heading .hairline{width:34px;margin:0 auto 29px;opacity:.76}
+.page-menu .menu-heading h1{font:400 clamp(62px,8.5vw,108px)/.98 var(--serif);letter-spacing:-.045em;color:#ecdfc9;text-wrap:balance}
+.page-menu .menu-heading h1 em{color:#d8b57b;font-weight:400}
+.page-menu .menu-heading>p{margin-top:24px;color:#b6a489;font:400 18px/1.4 var(--serif);letter-spacing:.018em}
+.page-menu .dishes{border-color:rgba(217,183,123,.23)}
+.page-menu .menu-course{grid-template-columns:40px minmax(0,1fr) auto;min-height:125px;gap:18px;padding:24px 0;border-color:rgba(217,183,123,.17)}
+.page-menu .menu-course:hover{padding-left:5px}
+.page-menu .course-count{font:400 14px/1.3 var(--serif);color:#b79b70;align-self:start;padding-top:9px}
+.page-menu .course-name{font:400 clamp(29px,3.65vw,43px)/1.08 var(--serif);color:#eee2d0;letter-spacing:-.014em;max-width:none}
+.page-menu .menu-course:hover .course-name{color:#ecc992}
+.page-menu .course-info p{font:400 15px/1.5 var(--serif);letter-spacing:.01em;color:#a99b85;margin:12px 0 0}
+.page-menu .course-recipe,.page-menu .drink-recipe{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:auto;height:42px;padding:3px 0;color:#d6b883;opacity:.85;white-space:nowrap;transition:transform .3s ease,opacity .3s ease}
+.page-menu .recipe-cta-text{font:500 9px/1.2 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.page-menu .course-recipe svg,.page-menu .drink-recipe svg{width:14px;height:14px;flex-shrink:0}
+.page-menu .course-recipe:hover,.page-menu .drink-recipe:hover{opacity:1;transform:translateX(3px)}
+.page-menu .side-group-heading{display:inline-block;color:#cab48f;margin-right:6px}
+.page-menu .side-link{color:#b5a58a;transition:color .25s ease;border-bottom:1px solid transparent}
+.page-menu .side-link:hover,.page-menu .side-link:focus-visible{color:#edcd95;border-bottom-color:#edcd95}
+.page-menu .side-separator{color:#746a5a}
+.page-menu .menu-drinks{max-width:none;margin:0 auto;padding-top:58px}
+.page-menu .tiny-label{text-align:center;color:#d7b785;font:500 10px/1.3 var(--sans);letter-spacing:.22em;margin:0 0 23px}
+.page-menu .drink-entry{grid-template-columns:minmax(0,1fr) auto;gap:15px;min-height:61px;padding:9px 0;border-bottom:1px solid rgba(217,183,123,.15)}
+.page-menu .drink-entry>a:first-child{font:400 clamp(24px,3.1vw,34px)/1.15 var(--serif);color:#e0d2bc}
+.page-menu .drink-entry:hover>a:first-child{color:#eccc8e}
+.page-menu .menu-conclusion{text-align:center;padding-top:44px;font:400 28px/1.3 var(--serif);color:#b5a58c}
+.page-menu .menu-conclusion em{color:#ddb979}
+.page-menu .menu-footer-note{text-align:center;margin-top:28px;color:#9f8e75}
+.page-menu .menu-footer-note a{margin-left:8px}
+@media(max-width:800px){.page-menu .menu-main{padding:8px 25px 40px}.page-menu .menu-heading{padding:58px 0 53px}.page-menu .menu-course{gap:11px;min-height:104px;padding:20px 0;grid-template-columns:30px minmax(0,1fr) auto}.page-menu .course-name{font-size:clamp(29px,4.2vw,38px)}.page-menu .course-info p{font-size:14px}.page-menu .course-recipe{align-self:start;margin-top:3px}}
+@media(max-width:560px){.page-menu .menu-main{padding:8px 21px 36px}.page-menu .menu-heading{padding:50px 0 46px}.page-menu .menu-heading h1{font-size:clamp(51px,11.7vw,68px);line-height:1.02}.page-menu .menu-heading>p{font-size:16px;max-width:250px;margin:17px auto 0}.page-menu .menu-course{grid-template-columns:24px minmax(0,1fr);column-gap:10px;row-gap:8px;min-height:0;padding:19px 0 20px}.page-menu .course-count{font-size:13px;padding-top:3px}.page-menu .course-name{font-size:clamp(26px,7.2vw,33px);line-height:1.08}.page-menu .course-info p{font-size:14px;line-height:1.38;margin-top:8px}.page-menu .course-recipe{grid-column:2;justify-self:start;align-self:center;margin:2px 0 0;height:22px}.page-menu .recipe-cta-text{font-size:9px;letter-spacing:.13em}.page-menu .course-recipe svg,.page-menu .drink-recipe svg{height:13px;width:13px}.page-menu .menu-drinks{padding-top:47px}.page-menu .drink-entry>a:first-child{font-size:clamp(22px,6vw,29px)}.page-menu .menu-conclusion{font-size:25px;padding-top:30px}.page-menu .menu-topline{font-size:9px;letter-spacing:.15em}.page-menu .topline-side{font-size:8px;letter-spacing:.05em}.page-menu .drink-recipe{height:35px;gap:5px}.page-menu .menu-footer-note{line-height:1.5}.page-menu .menu-footer-note a{margin-left:0;display:inline-flex;justify-content:center}}
+@media(max-width:365px){.page-menu .menu-main{padding-left:17px;padding-right:17px}.page-menu .menu-heading h1{font-size:48px}.page-menu .course-name{font-size:25px}.page-menu .course-info p{font-size:13px}.page-menu .menu-topline .topline-side{font-size:7px}.page-menu .recipe-cta-text{font-size:8px}}
