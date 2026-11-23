@@ -1,22 +1,15 @@
-# Our First Christmas Together
+# Our First Christmas Together — editorial storybook
 
-A private-feeling, static Christmas storybook for Rusty & Ica, 25 December 2026.
+Minimal three-chapter Christmas microsite for Rusty & Ica.
 
-## Storybook pages
+- `index.html`: black and gold opening page.
+- `menu.html`: all five courses, three sides, four drinks, editorial photography.
+- `letter.html`: three original personal photographs and a short note.
+- `recipes.html`: 12 complete recipes, with direct links and filters. No shopping list.
+- `assets/celera.css` and `assets/celera.js`: responsive layout, subtle golden dust, page transitions, scroll reveals and photographic interactions.
+- `assets/food/`: previously generated HD food artwork.
+- `assets/photos/`: the original couple's photographs.
 
-- `index.html`: Black-and-gold title cover with drifting gold dust.
-- `menu.html`: One complete dark Christmas menu, with links to every recipe.
-- `letter.html`: The personal note and photographs on the final page.
-- `recipes.html`: Twelve recipes with ingredients and cooking methods. No shopping list.
+Built with plain HTML/CSS/JS, no build step. Open `index.html` locally or host the folder on any static web server. Honours `prefers-reduced-motion`. Inspired by minimal editorial hospitality design; no third-party restaurant design assets or code copied.
 
-## Design
-
-The pages share the same minimal black, forest, and soft-gold palette. Custom gold SVG ornaments and arrows (no emoji glyphs) keep iOS and Android consistent. The mobile chapter navigation sits below each page instead of covering the menu. Gentle animated sparkles and page transitions respect the `prefers-reduced-motion` setting. Cover typography resizes to fit each viewport once the web font loads. Horizontal swipes navigate the three story chapters on phones, and every page includes visible navigation links.
-
-## Running
-
-Open `index.html` in a browser or serve the folder with any static web host. The site can be deployed to GitHub Pages or Vercel without a build step. It uses CSS and JavaScript only; no framework or database is required.
-
-Photos remain in `assets/photos/`; high-resolution generated food imagery remains in `assets/food/`.
-
-**Privacy:** The GitHub repository may be public. The photographs and letter are accessible to anyone who can access the repository or deployed website. This is a design site, not a password-protected one.
+**Privacy:** This repository contains personal couple photographs. A public GitHub repository exposes these images publicly.
