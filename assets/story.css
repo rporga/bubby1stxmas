@@ -9,3 +9,89 @@
 @media(max-width:650px){.cover-stage{padding-bottom:90px}.cover-content{transform:translateY(-16px)}.cover-ornament{margin-bottom:33px}.cover-overline{font-size:38px;letter-spacing:.21em}.cover-script{font-size:clamp(84px,24vw,126px)}.cover-end{font-size:clamp(45px,12vw,63px);letter-spacing:.15em}.cover-rule{margin:44px auto 30px}.cover-enter{min-width:240px}.cover-corner{width:55px;height:55px}.cover-corner--top{top:16px;left:16px}.cover-corner--bottom{bottom:16px;right:16px}.chapter-nav{height:70px;padding:0 20px}.chapter-nav-links{display:none}.chapter-brand{font-size:22px}.chapter-index{font-size:12px}.book-scene{padding:8px 11px 100px}.book-intro{margin-bottom:18px;font-size:9px;letter-spacing:.08em}.menu-paper{min-height:0;box-shadow:0 20px 36px #0006,5px 7px 0 #dbc4a3}.menu-paper:before{inset:7px}.page-paper-inner{padding:69px 26px 53px}.botanical{height:152px;width:152px;opacity:.91}.botanical-tl{top:-18px;left:-25px}.botanical-tr{top:-18px;right:-23px}.botanical-bl{bottom:-26px;left:-23px}.botanical-br{bottom:-26px;right:-23px}.paper-super{font-size:9px;letter-spacing:.22em}.paper-header h1{font-size:clamp(72px,21vw,103px)}.paper-sub{font-size:9px;letter-spacing:.15em;margin-top:20px}.red-berry-divider{margin:13px 0 9px}.menu-section-title{font-size:9px;letter-spacing:.2em;margin-bottom:14px}.dish-list{gap:18px}.printed-dish{grid-template-columns:18px minmax(0,1fr) 13px;gap:5px}.dish-number{font-size:11px}.dish-body>a{font-size:clamp(22px,6.3vw,27px)}.dish-description{font-size:11px;line-height:1.45;margin-top:4px}.recipe-dot{font-size:15px}.separator-flourish{margin:25px 0 13px}.printed-drinks{gap:13px}.drink-line>a:first-child{font-size:21px}.menu-paper-foot{font-size:26px}.book-next{display:none}.mobile-book-controls{position:fixed;z-index:10;bottom:0;left:0;right:0;height:60px;display:flex;align-items:center;justify-content:space-between;padding:0 17px;padding-bottom:env(safe-area-inset-bottom);background:#101c16f5;border-top:1px solid #bba57533;box-sizing:content-box}.mobile-book-controls a{text-decoration:none;text-transform:uppercase;letter-spacing:.08em;color:#e9d8b9;font:500 11px var(--sans)}.mobile-book-controls>span{font:400 15px var(--serif);color:#b6a580}.mobile-book-controls i{font-style:normal;font-size:9px;color:#bd9659;padding:0 6px}.letter-stage{padding:10px 12px 85px}.letter-book{display:flex;flex-direction:column;min-height:0}.photo-side{min-height:460px}.photo-main{left:15%;top:9%;width:68%;height:66%}.photo-small{height:27%;width:44%}.photo-small-one{left:4%;bottom:3%}.photo-small-two{right:2%;bottom:4%}.letter-side{padding:65px 36px 75px}.letter-side h1{font-size:68px;margin-bottom:18px}.letter-body{font-size:23px}.letter-stamp{margin-top:32px}.recipe-head{height:66px;padding:0 18px}.recipe-head>span:last-child{font-size:8px}.recipe-book{padding:57px 14px 90px}.recipe-book-title{margin-bottom:32px}.recipe-book-title h1{font-size:67px}.recipe-book-title>p:last-child{font-size:16px}.recipe-categories{gap:5px;padding:20px 0}.recipe-categories button{padding:10px 9px;font-size:9px}.recipe-card summary{grid-template-columns:84px minmax(0,1fr) 15px;gap:12px;padding:8px 10px 8px 8px;min-height:106px}.recipe-thumb{width:84px;height:88px}.recipe-card-name{gap:4px}.recipe-card-name small{font-size:8px}.recipe-card-name strong{font-size:24px}.recipe-card-name em{font-size:15px}.expand-icon{font-size:20px}.recipe-details{display:block;padding:13px 18px 30px}.recipe-large-image{max-height:230px;margin-bottom:28px}.recipe-large-image img{height:230px}.recipe-details .recipe-ingredients{margin-bottom:35px}.recipe-details ul,.recipe-details ol{font-size:20px}.recipe-details h3{font-size:11px}.recipe-ending{padding-top:60px}}
 @media(max-width:370px){.cover-overline{font-size:34px}.cover-end{font-size:43px}.cover-script{font-size:85px}.page-paper-inner{padding:60px 22px 44px}.paper-header h1{font-size:73px}.dish-body>a{font-size:22px}.dish-description{font-size:10px}.drink-line>a:first-child{font-size:19px}.letter-side{padding:50px 26px 65px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.gold-dust{display:none}html.js .reveal{opacity:1;transform:none}}
+
+
+/* 2026 CHRISTMAS EDITION — night-gold book, built for real screens */
+:root{
+  --book-black:#090c0a;
+  --book-charcoal:#101510;
+  --book-gold:#dfbd7d;
+  --book-muted-gold:#a48b63;
+  --book-ivory:#eee4d0;
+}
+body.page-cover,body.page-menu,body.page-letter{background:#090c0a;color:var(--book-ivory)}
+.page-cover{background:radial-gradient(ellipse 45% 38% at 50% 37%,#292016 0%,#14140f 50%,#070908 100%)}
+.night-glow{background:radial-gradient(ellipse 35% 16% at 52% 25%,rgba(209,155,66,.16),transparent 85%),radial-gradient(circle at 24% 70%,rgba(154,107,44,.055),transparent 28%),radial-gradient(circle at 81% 29%,rgba(199,149,63,.08),transparent 29%)}
+.gold-dust{z-index:4;opacity:1;mix-blend-mode:screen}
+/* Make the lettering fit its own container, rather than clipping the swashes. */
+.cover-stage{isolation:isolate;overflow:hidden;padding-inline:clamp(16px,4vw,48px)}
+.cover-content{width:min(100%,900px);min-width:0}
+.cover-content h1{width:100%;max-width:100%;min-width:0;overflow:visible}
+.cover-overline,.cover-script,.cover-end{display:block;min-width:0;max-width:100%;white-space:nowrap;text-align:center}
+.cover-overline{font-size:clamp(32px,4.8vw,65px);line-height:1.12;letter-spacing:.19em;padding-left:.19em}
+.cover-script{font-size:clamp(69px,10vw,146px);line-height:1.15;letter-spacing:0;margin:2px 0 -8px;padding:.03em .04em .10em;overflow:visible;filter:drop-shadow(0 0 22px #bd8d453d)}
+.cover-end{font-size:clamp(39px,6.15vw,78px);line-height:1.05;letter-spacing:.18em;padding-left:.18em}
+.cover-ornament{margin-bottom:clamp(14px,3vh,26px);text-shadow:0 0 23px rgba(227,187,99,.44)}
+.cover-rule{margin:clamp(23px,4vh,43px) auto clamp(24px,4vh,35px)}
+.cover-enter{position:relative;z-index:5;background:rgba(19,18,14,.42);backdrop-filter:blur(4px)}
+/* A black Christmas menu, with fine gold print and a barely-there festive illustration. */
+.page-menu{background:#090c0a}
+.book-scene{background:radial-gradient(ellipse 70% 72% at 50% 22%,#1b2118 0%,#101612 51%,#080b09 100%)}
+.book-intro{color:#bda881}
+.menu-paper{background:linear-gradient(135deg,#151b15 0%,#0c120e 40%,#141b14 100%);color:#f1e5cc;box-shadow:0 30px 90px #000a,7px 6px 0 #55452d,10px 10px 0 #2f2619}
+.menu-paper:before{inset:14px;border:1px solid rgba(207,166,100,.32)}
+.menu-paper:after{background:radial-gradient(ellipse 58% 32% at 50% 13%,rgba(211,165,82,.07),transparent 100%),radial-gradient(circle at 50% 70%,rgba(0,0,0,.16),transparent 68%);opacity:1}
+.botanical{background-image:url('botanical.svg');opacity:.72}
+.paper-super{color:#d4bf92}
+.paper-super span{color:#dbb86b}
+.paper-header h1{color:#e2bf83;text-shadow:0 0 25px rgba(198,150,74,.14)}
+.paper-sub{color:#aa9772}
+.red-berry-divider{color:#af7d55}
+.menu-section-title{color:#d3ad70}
+.dish-number{color:#bd9a65}
+.dish-body>a{color:#f1e3c6}
+.dish-body>a:hover,.dish-body>a:focus-visible{color:#f1c47a}
+.dish-description{color:#a99f8b}
+.recipe-dot,.drink-recipe{color:#d6ac72}
+.separator-flourish{color:#b48e57}
+.drink-line>a:first-child{color:#efe0c0}
+.drink-line>a:first-child:hover{color:#e4bb74}
+.menu-paper-foot{color:#d8ab68}
+.page-menu .chapter-nav{background:#090c0a}
+.book-next a{color:#e7d5b5}
+/* The final chapter belongs to the same night, rather than a white flyer. */
+.page-letter{background:#090c0a!important}
+.letter-book{background:#101712;box-shadow:0 40px 105px #000b,8px 7px 0 #4e4129a8}
+.photo-side{background:#101b16}
+.letter-side{background:radial-gradient(ellipse at 50% 25%,rgba(199,157,83,.07),transparent 70%),#101712;color:#efe2c8;border-left:1px solid #9477473b}
+.letter-kicker{color:#bf9d68}
+.letter-side h1{color:#e4bc78}
+.letter-side h1 span{color:#b99c64}
+.letter-body{color:#e8ddc6}
+.letter-signoff{color:#c9bb9d}
+.letter-signoff span{color:#e5be7a}
+.letter-stamp{color:#aa9068}
+.photo-frame{border-color:#d7c6a1}
+/* Small screens and short laptop viewports */
+@media(max-width:650px){
+ .cover-stage{padding:48px 15px 85px}
+ .cover-content{width:100%}
+ .cover-script{font-size:clamp(66px,17vw,108px);line-height:1.2;margin:0 0 -8px}
+ .cover-overline{font-size:clamp(30px,8vw,42px);letter-spacing:.14em;padding-left:.14em}
+ .cover-end{font-size:clamp(35px,9.1vw,50px);letter-spacing:.13em;padding-left:.13em}
+ .menu-paper{box-shadow:0 21px 40px #0008,4px 5px 0 #5a472b}
+ .menu-paper:before{inset:8px}
+ .botanical{opacity:.58}
+ .paper-header h1{font-size:clamp(68px,19vw,99px)}
+ .letter-side{border-left:0;border-top:1px solid #9477473b}
+ .mobile-book-controls{background:rgba(10,16,12,.97)}
+}
+@media(max-height:630px) and (min-width:651px){
+ .cover-stage{padding-block:22px}
+ .cover-ornament{margin-bottom:6px;font-size:22px}
+ .cover-script{font-size:min(9vw,112px)}
+ .cover-overline{font-size:min(4.5vw,48px)}
+ .cover-end{font-size:min(6vw,62px)}
+ .cover-rule{margin:12px auto 17px}
+ .cover-enter{padding:12px 19px}
+}
