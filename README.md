@@ -11,7 +11,7 @@ A private-feeling, static Christmas storybook for Rusty & Ica, 25 December 2026.
 
 ## Design
 
-The pages share the same minimal black, forest, and soft-gold palette. Gentle animated sparkles and page transitions respect the `prefers-reduced-motion` setting. Cover typography resizes to fit each viewport once the web font loads. Horizontal swipes navigate the three story chapters on phones, and every page includes visible navigation links.
+The pages share the same minimal black, forest, and soft-gold palette. Custom gold SVG ornaments and arrows (no emoji glyphs) keep iOS and Android consistent. The mobile chapter navigation sits below each page instead of covering the menu. Gentle animated sparkles and page transitions respect the `prefers-reduced-motion` setting. Cover typography resizes to fit each viewport once the web font loads. Horizontal swipes navigate the three story chapters on phones, and every page includes visible navigation links.
 
 ## Running
 

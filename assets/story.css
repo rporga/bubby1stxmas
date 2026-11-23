@@ -95,3 +95,55 @@ body.page-cover,body.page-menu,body.page-letter{background:#090c0a;color:var(--b
  .cover-rule{margin:12px auto 17px}
  .cover-enter{padding:12px 19px}
 }
+
+
+/* 2026 Storybook refinement: vector ornaments, no platform-dependent emoji glyphs. */
+.icon-star,.icon-arrow,.icon-heart{display:inline-block;flex:0 0 auto;background:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain;vertical-align:middle}
+.icon-star{width:18px;height:18px;-webkit-mask-image:url('star.svg');mask-image:url('star.svg')}
+.icon-star--hero{width:31px;height:31px;filter:drop-shadow(0 0 7px #deb15e55)}
+.icon-star--tiny{width:10px;height:10px}
+.icon-star--small{width:14px;height:14px;-webkit-mask-image:url('star-small.svg');mask-image:url('star-small.svg')}
+.icon-arrow{width:16px;height:16px}
+.icon-arrow--ne{-webkit-mask-image:url('arrow-ne.svg');mask-image:url('arrow-ne.svg')}
+.icon-arrow--right{-webkit-mask-image:url('arrow-right.svg');mask-image:url('arrow-right.svg')}
+.icon-arrow--left{-webkit-mask-image:url('arrow-left.svg');mask-image:url('arrow-left.svg')}
+.icon-arrow--refresh{-webkit-mask-image:url('refresh.svg');mask-image:url('refresh.svg')}
+.icon-heart{width:24px;height:24px;-webkit-mask-image:url('heart.svg');mask-image:url('heart.svg')}
+.cover-ornament{display:flex;align-items:center;justify-content:center}
+.paper-super{display:flex;justify-content:center;align-items:center;gap:8px}.paper-super .icon-star{color:#d1a962}
+.red-berry-divider,.separator-flourish{display:flex;align-items:center;justify-content:center}
+.red-berry-divider .icon-star{color:#c49c65}
+.separator-flourish .icon-star{width:23px;height:23px;color:#c3a06c}
+.recipe-dot,.drink-recipe{display:inline-flex;align-items:center;justify-content:center;min-width:20px;min-height:24px;vertical-align:top;line-height:1}
+.recipe-dot .icon-arrow,.drink-recipe .icon-arrow{width:16px;height:16px}
+.page-link,.book-next>a,.recipe-back,.recipe-ending>a{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.page-link .icon-arrow,.book-next .icon-arrow{width:15px;height:15px;color:inherit}
+.cover-enter .icon-arrow{width:17px;height:17px}
+.letter-side h1 .icon-heart{color:#b99c64;margin-left:11px;transform:translateY(-8px)}
+.recipe-ending>.icon-star{display:block;width:24px;height:24px;margin:0 auto 16px;color:#c7a36b}
+.recipe-back .icon-arrow{width:16px;height:16px}
+.recipe-ending>a .icon-arrow{width:17px;height:17px}
+.page-indicator{display:inline-flex;align-items:center;justify-content:center;gap:9px;color:#d1b37e;font:500 11px var(--sans);letter-spacing:.12em;font-variant-numeric:tabular-nums}
+.page-rule{width:22px;height:1px;background:linear-gradient(90deg,#7e653e,#e7c992,#7e653e)}
+@media(max-width:650px){
+.mobile-book-controls{height:62px;gap:8px;padding-inline:clamp(12px,4.3vw,24px);padding-bottom:env(safe-area-inset-bottom);background:linear-gradient(180deg,rgba(13,19,15,.96),#080d0a);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid rgba(199,165,104,.3);box-shadow:0 -12px 28px #0005}
+.mobile-book-controls .page-link{gap:7px;white-space:nowrap;text-transform:none;font:500 12px var(--sans);letter-spacing:.05em;color:#ead7b4;min-height:42px}
+.mobile-book-controls .icon-arrow{width:15px;height:15px;color:#d1ab6c}
+.mobile-book-controls .page-indicator{flex:0 0 auto;color:#c7a771}
+.mobile-book-controls .page-rule{width:18px}
+.paper-super{gap:6px}
+}
+@media(max-width:360px){.mobile-book-controls .page-link{font-size:11px}.mobile-book-controls .page-indicator{gap:6px}.mobile-book-controls .page-rule{width:13px}}
+
+/* The chapter controls belong below the page on mobile, not over printed content. */
+@media(max-width:650px){
+ .page-menu .book-scene{padding-bottom:36px}
+ .page-letter .letter-stage{padding-bottom:34px}
+ .mobile-book-controls{
+  position:relative;left:auto;right:auto;bottom:auto;
+  width:min(100% - 26px,850px);height:auto;box-sizing:border-box;
+  margin:0 auto 24px;padding:15px 6px calc(15px + env(safe-area-inset-bottom));
+  background:none;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;
+  border-top:1px solid rgba(198,158,94,.34);
+ }
+}
