@@ -32,3 +32,8 @@ Use any static host, such as GitHub Pages or Vercel. Public repositories and pub
 ## Notes
 
 This site is inspired by the editorial restraint and immersive interaction of contemporary restaurant websites. It does not copy their code or trade dress.
+
+
+## High-definition Christmas photography
+
+The menu, sides, and cocktails use full-resolution 1448 × 1086 pixel generated food photography. These are encoded as quality-96 WebP **without resizing** for fast mobile delivery while preserving detailed, high-definition visuals. The illustrated placeholders have been replaced throughout both pages, including the ham feature and all three sides. The Christmas logo is the 2172 × 724 transparent original PNG (`assets/logo.png`).
